@@ -1,0 +1,132 @@
+import java.util.Scanner;
+
+public class PersonsAge {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+
+        // Age defined as an integer
+        int age = input.nextInt();
+
+        // Age that is not allowed to do anything
+        if (age < 16) {
+            System.out.println("You can not do anything.");
+
+        // Age that is allowed to drive and stay out
+        } else if (16 >= age && age < 18) {
+            System.out.println("You can drive and stay out past 10 p.m.");
+
+        // Age that is allowed to do all
+        } else {
+            System.out.println("You can vote, drive, and stay out past 10 p.m.");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+
+public class NumberPractice {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter four numbers ");
+
+        // Allows the 4 numbers to be intergers
+        int number1 = input.nextInt();
+        int number2 = input.nextInt();
+        int number3 = input.nextInt();
+        int number4 = input.nextInt();
+
+        // Setting parameters
+        int smallest1;
+        int smallest2;
+        int largest1;
+        int largest2;
+
+        // First number less than second number
+        if (number1 < number2){
+            smallest1 = number1;
+            largest1 = number2;
+
+        // Second number less than first number
+        } else {
+            smallest1 = number2;
+            largest1 = number1;
+
+        // Third number less than fourth number)
+        } if (number3 < number4) {
+            smallest2 = number3;
+            largest2 = number4;
+
+        } else {
+            smallest2 = number4;
+            largest2 = number3;
+        }
+
+        // Defining the smallest value as an integer
+        int small;
+
+        // Comparison between the smallest values
+        if (smallest1 > smallest2) {
+            smallest1 = smallest2;
+        } else {
+            small = smallest1;
+        }
+
+        // Defining the largest value as an integer
+        int largest;
+
+        // Comparison between the largest values
+        if (largest1 < largest2) {
+            largest = largest2;
+        } else {
+            largest = largest1;
+        }
+
+        // Printing largest and smallest output
+        System.out.println("Largest: " + largest);
+        System.out.println("Smallest: " + small);
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class MeaningOfLife {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("You entered: ");
+
+        // If user inputs 42
+        if (number == 42) {
+            System.out.println("Your answer is correct.");
+
+        //If user inputs any other number
+        } else {
+            System.out.println("You do not have the answer to life.");
+        }
+    }
+}
+
+
+Section 1
+1. 20
+2. 15
+3. 17
+4. 16
+5. 20
+Section 2
+1. F
+2. F
+3. T
+4. F
+5. T
+6. T
+Section 3
+1. Line 8  =    Description = there is a condition for an else
+2. Line 12  =    Description = there is { instead of (
+3. Line 12  =     Description = you need to have == instead of =
+4. Line 12  =     Description = the line should end with a {
+5. Line  8  =     Description = it has to be >= not =>
